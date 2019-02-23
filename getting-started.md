@@ -22,5 +22,5 @@ The `jx login` command will onboard you into the CKCD application and update you
 
 Once you have successfully run that command the CKCD application should open in your default browser - if not, navigate to https://core.jx.ckcd.beedemo.net/ and login with your GitHub credentials.
 
-Now you are ready to move on to the [next exercise to create a Jenkins X application using a Jenkins X Quickstart](./create_quickstart.md).
+Now you are ready to move on to the [next exercise to create a Jenkins X application using a Jenkins X Quickstart](./create-quickstart.md).
 
