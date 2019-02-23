@@ -18,5 +18,9 @@ If you already have any of these dependencies installed then you will want to ma
  * `helm` version: 2.12.2
  * `terraform` version v0.11.11
 
+The `jx login` command will onboard you into the CKCD application and update your local Kubernetes client configuration to allow running `jx` CLI commands against the workshop cluster. 
 
+Once you have successfully run that command the CKCD application should open in your default browser - if not, navigate to https://core.jx.ckcd.beedemo.net/ and login with your GitHub credentials.
+
+Now you are ready to move on to the [next exercise to create a Jenkins X application using a Jenkins X Quickstart](./create_quickstart.md).
 
