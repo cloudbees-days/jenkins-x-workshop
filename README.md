@@ -3,7 +3,7 @@ In this workshop you will discover how Jenkins X and CloudBees Core for Kubernet
 
 # Workshop Prerequisites
 
-In order to follow along with the hands on portion of the workshop, attendess should have the following resources available to them and tools installed:
+In order to follow along with the hands on portion of the workshop, attendees should have the following resources available to them and tools installed:
 
   * A basic understanding of Jenkins Pipelines: https://jenkins.io/doc/book/pipeline/getting-started/ 
   * A basic understanding of Kubernetes
