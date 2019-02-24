@@ -1,5 +1,5 @@
 # Jenkins X and CloudBees Core for Kubernetes CD Developers Workshop
-In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes where Jenkins Pipeline and pre-production environments are created automatically. 
+In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes where Jenkins Pipeline and pre-production environments are created automatically.
 
 # Workshop Prerequisites
 
@@ -14,12 +14,13 @@ In order to follow along with the hands on portion of the workshop, attendees sh
     - admin:repo_hook: all
     - admin:org_hook
     - user: all
+  * [Git](https://git-scm.com/) locally installed
   * Install the `jx` cli: https://jenkins-x.io/getting-started/install/ 
     - NOTE: During the workshop `jx` will install some additional dependencies if you don't already have them installed on your computer. These include:
       * `kubectl`
       * `helm`
       * `terraform`
-    * If you already have any of these dependencies installed then you will want to make sure they are at the following version:
+    * If you already have any of these dependencies installed then you will want to make sure they are at the following versions:
       * `kubectl` client version v1.13.2
       * `helm` version: 2.12.2
       * `terraform` version v0.11.11 
