@@ -1,6 +1,6 @@
 # Getting Started
 
-The Jenkins X cluster that you will be using today has the [CloudBees addon](https://jenkins-x.io/commands/jx_create_addon_cloudbees/) installed, providing CloudBees Core for Kuberenetes CD (CKCD). One feature of CKCD is that it provides single-sign-on. This will allow more than one user to use the same Kubernetes cluster with Jenkins X rather than creating a cluster for every developer.
+The Jenkins X cluster that you will be using today has the [CloudBees addon](https://jenkins-x.io/commands/jx_create_addon_cloudbees/) installed, providing CloudBees Core for Kuberenetes CD (CKCD). One feature of CKCD is that it provides single-sign-on. This will allow multiple users to use the same Kubernetes cluster with Jenkins X rather than creating a cluster for each developer.
 
 You should already have the Jenkins X `jx` CLI installed (if not follow [these instructions](https://jenkins-x.io/getting-started/install/)). Open a terminal on you computer and run the following command to login to the cluster we will be using today:
 
