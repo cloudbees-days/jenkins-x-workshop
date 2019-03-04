@@ -3,4 +3,12 @@ DevPods have a `--sync` feature that will automatically sync local changes up to
 
 Instead of using `--sync` we will be using another cool features of DevPods - [an embedded web based IDE called Theia](https://www.theia-ide.org/).
 
-Open the Theia IDA in your browser.
+Open the Theia IDE in your browser.
+
+Make a change to the code.
+
+Commit to a new branch.
+
+Go to GitHub and create a PR to the master branch.
+
+Next section - [Preview Environments](./preview-environments.md)

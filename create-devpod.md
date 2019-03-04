@@ -1,4 +1,4 @@
-# Create a DevPod
+# Create and Use a DevPod
 
 A DevPod allows you to develop in a K8s pod running in the same cluster where Jenkins X is running. DevPods allow you to build and test your Jenkins X application before you are ready to create a Pull Request - all without installing any developer tools on your computer. 
 

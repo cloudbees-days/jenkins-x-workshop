@@ -1,7 +1,15 @@
 # Jenkins X and CloudBees Core for Kubernetes CD Developers Workshop
-In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes where Jenkins Pipeline and pre-production environments are created automatically.
+In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes with Jenkins Pipelines and pre-production environments created automatically.
 
-# Workshop Prerequisites
+## Workshop Content
+Please review the workshop prerequisites before proceeding to any exercises.
+* [Getting Started](./getting-started.md)
+* [Create a Quickstart Project](./create-quickstart.md)
+* [Create and Use a DevPod](./create-devpod.md)
+* [Using the Theia IDE](./theia-ide.md)
+* [Leveraging Preview Environments for Pull Requests](./preview-environments.md)
+
+## Workshop Prerequisites
 
 In order to follow along with the hands on portion of the workshop, attendees should have the following resources available to them and tools installed:
 
@@ -26,15 +34,15 @@ In order to follow along with the hands on portion of the workshop, attendees sh
       * `terraform` version v0.11.11 
   * Typically a K8s cluster with Jenkins but if you would like to complete this workshop on your own you can follow the [instructions here](https://go.cloudbees.com/docs/cloudbees-core/kubernetes-cd-install-guide/) to create your own Jenkins X Kubernetes cluster.
 
-# Disclaimer
+## Disclaimer
 
 Although the examples and code in this repository were originally created by employees of CloudBees, Inc. to use in training customers, your use of this material is not sponsored or supported by CloudBees, Inc.
 
-# Contributors 
+## Contributors 
 
 * Contributor: [Kurt Madel](https://github.com/kmadel)
  
-# Questions, Feedback, Pull Requests Etc.
+## Questions, Feedback, Pull Requests Etc.
 
 If you have any questions, feedback, suggestions, etc. please submit them via issues or, even better, submit a Pull Request!
 
