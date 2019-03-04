@@ -32,7 +32,7 @@ In order to follow along with the hands on portion of the workshop, attendees sh
       * `kubectl` client version v1.13.2
       * `helm` version: 2.12.2
       * `terraform` version v0.11.11 
-  * Typically a K8s cluster with Jenkins but if you would like to complete this workshop on your own you can follow the [instructions here](https://go.cloudbees.com/docs/cloudbees-core/kubernetes-cd-install-guide/) to create your own Jenkins X Kubernetes cluster.
+  * Typically a K8s cluster with Jenkins X already installed will be provided, but if you would like to complete this workshop on your own you can follow the [instructions here](https://go.cloudbees.com/docs/cloudbees-core/kubernetes-cd-install-guide/) to create your own Jenkins X Kubernetes cluster with CloudBees Core for K8s CD.
 
 ## Disclaimer
 
