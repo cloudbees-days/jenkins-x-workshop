@@ -2,7 +2,7 @@
 In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes with Jenkins Pipelines and pre-production environments created automatically.
 
 ## Workshop Content
-Please review the workshop prerequisites before proceeding to any exercises.
+Please review the [workshop prerequisites](https://github.com/cloudbees-days/jenkins-x-workshop#workshop-prerequisites) before proceeding to any exercises.
 * [Getting Started](./getting-started.md)
 * [Create a Quickstart Project](./create-quickstart.md)
 * [Create and Use a DevPod](./create-devpod.md)
