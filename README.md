@@ -17,7 +17,7 @@ In order to follow along with the hands on portion of the workshop, attendees sh
   * A basic understanding of Kubernetes: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/ 
   * Internet access to include access to https://github.com to include the ability to access and use [the GitHub File Editor](https://help.github.com/articles/editing-files-in-your-repository/)
   * An account on Github.com and a basic understanding of how to use Github to do things like fork a repository, edit files in the web UI, and create pull requests
-  * A personal access token for your Github account ([Github-Personal-Access-Token.md](Github-Personal-Access-Token.md)) with the following permissions:
+  * A personal access token for your Github account with the following permissions:
     - repo: all
     - admin:repo_hook: all
     - admin:org_hook
