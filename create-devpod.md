@@ -15,3 +15,5 @@ jx create devpod -l go --username='[your GitHub username]'
 
 This will then create a new DevPod based on the `go` based pod template and open your terminal inside that pod. You are now free to use the various pre-installed tools like git, docker, go, skaffold, jx which will all be using the same exact configuration as the automated Jenkins X CI/CD pipelines.
 
+Now you are ready to move on to the [Using the Theia IDE](./theia-ide.md).
+
