@@ -1,10 +1,10 @@
 # Create a Quickstart Project
 
-Quickstarts are very basic pre-made applications you can start a project from, instead of starting from scratch.
+Quickstarts are very basic pre-made applications you can start a project from, instead of creating a project from scratch.
 
 You can create new applications from a list of curated Quickstart applications via the [`jx create quickstart` command](https://jenkins-x.io/commands/jx_create_quickstart/).
 
- We will run the following quickstart command where the `-l go` will filter the list of available quickstarts to a specific language and the `-f http` will filter for text that is part of the project names - so the following command will result in a list of Golang projects with 'http' in their names:
+ We will run the following quickstart command where the `-l go` will filter the list of available quickstarts to a specific language - Go in this case - and the `-f http` will filter for text that is part of the quickstart project names - so the following command will result in a list of Golang projects with 'http' in their names:
 ```
 jx create quickstart -l go -f http
 ```
@@ -22,7 +22,7 @@ When prompted for:
 
 **? GitHub user name:** choose the default value, which should be your own GitHub account username that you specified in the previous step.
 
-**?* API Token:**- click on this [link](https://github.com/settings/tokens/new?scopes=repo,read:user,read:org,user:email,write:repo_hook,delete_repo) - logging in to GitHub with the same GitHub account used in the previus steps and enter the API token.
+**?* API Token:**- enter your GitHub personal access token. If you don't have one then click on this [link](https://github.com/settings/tokens/new?scopes=repo,read:user,read:org,user:email,write:repo_hook,delete_repo) - logging in to GitHub with the same GitHub account used in the previus steps and enter the API token.
 
 **? Enter the new repository name:** - this will be your project name and the name of the repository created for the project. We will all call 'go-http' but prefix it with our GitHub account username, so I would enter **kmadel-go-http**. All of these repositories will be created in the same GitHub organization, so they must all have unique names.
 
