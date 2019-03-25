@@ -1,0 +1,10 @@
+==================================================================
+Jenkins X and CloudBees Core for Kubernetes CD Developers Workshop
+==================================================================
+
+To get started, you will need to install all required dependencies.  To do this
+run the script:
+
+`source ./install-jx.sh` to install jx and add it to you path.
+
+Enjoy...
