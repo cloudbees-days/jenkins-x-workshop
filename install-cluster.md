@@ -72,3 +72,6 @@ Next, `jx` will attempt to configure Jenkins connectivity.  This should be done 
 but sometimes Jenkins is not able to start intime.  In this instance, you will be asked to 
 login to Jenkins using the admin user.  The password for the admin user will be displayed in the 
 console.  At this point, follow the instructions to add the Jenkins API token.
+
+
+[![Create a Quickstart Project](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fcloudbees-days%2Fjenkins-x-workshop&page=editor&print=install-guide.txt&tutorial=create-quickstart.md)
