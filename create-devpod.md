@@ -2,7 +2,7 @@
 
 A [DevPod](https://jenkins-x.io/developing/devpods/) allows you to develop in a K8s pod running in the same cluster where Jenkins X is running. DevPods allow you to build and test your Jenkins X application before you are ready to create a Pull Request - all without installing any developer tools on your computer. 
 
-DevPods provide a terminal/shell that is based on the exact same operating system, docker containers and tools that are installed in the pod templates used in the Jenkins X CI/CD pipelines. This allows you to build, run tests or redeploy apps using the exact same tools as the CI/CD pipelines and before you commit to git.
+DevPods provide a terminal/shell that is based on the exact same operating system, docker containers and tools that are installed in the pod templates used in the Jenkins X CI/CD pipelines. This allows you to build, run tests or redeploy apps using the exact same tools as the CI/CD pipelines provided by Jenkins X build-packs and before you commit to your upstream Git repository.
 
 Before creating a DevPod you want to be in the source code repository for which you want to make changes - the one create with the quickstart from the last exercise: `cd ./{GitHub username}-go-http` 
 

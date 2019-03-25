@@ -10,29 +10,13 @@ Please review the [workshop prerequisites](https://github.com/cloudbees-days/jen
 * [Leveraging Preview Environments for Pull Requests](./preview-environments.md)
 
 ## Workshop Prerequisites
-
-In order to follow along with the hands on portion of the workshop, attendees should have the following resources available to them and tools installed:
-
-  * A basic understanding of Jenkins Pipelines: https://jenkins.io/doc/book/pipeline/getting-started/ 
-  * A basic understanding of Kubernetes: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/ 
-  * Internet access to include access to https://github.com to include the ability to access and use [the GitHub File Editor](https://help.github.com/articles/editing-files-in-your-repository/)
-  * An account on Github.com and a basic understanding of how to use Github to do things like fork a repository, edit files in the web UI, and create pull requests
-  * A personal access token for your Github account with the following permissions:
-    - repo: all
-    - admin:repo_hook: all
-    - admin:org_hook
-    - user: all
-  * [Git](https://git-scm.com/) locally installed
-  * Install the `jx` cli: https://jenkins-x.io/getting-started/install/ 
-    - NOTE: During the workshop `jx` will install some additional dependencies if you don't already have them installed on your computer. These include:
-      * `kubectl`
-      * `helm`
-      * `terraform`
-    * If you already have any of these dependencies installed then you will want to make sure they are at the following versions:
-      * `kubectl` client version v1.13.2
-      * `helm` version: 2.12.2
-      * `terraform` version v0.11.11 
-  * Typically a K8s cluster with Jenkins X already installed will be provided, but if you would like to complete this workshop on your own you can follow the [instructions here](https://go.cloudbees.com/docs/cloudbees-core/kubernetes-cd-install-guide/) to create your own Jenkins X Kubernetes cluster with CloudBees Core for K8s CD.
+* Web browser
+* A basic understanding of Jenkins Pipelines: https://jenkins.io/doc/book/pipeline/getting-started/ 
+* A basic understanding of Kubernetes: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/ 
+* Internet access to include access to https://github.com to include the ability to access and use [the GitHub File Editor](https://help.github.com/articles/editing-files-in-your-repository/)
+* An account on Github.com and a basic understanding of how to use Github to do things like fork a repository, edit files in the web UI, and create pull requests
+* Google cloud account (there's a $300 credit, free tier if you don't already have one https://cloud.google.com/free/)
+* A Google cloud project (select your project with `gcloud config set project PROJECT_ID` once Cloud Shell is ready)
 
 ## Disclaimer
 
