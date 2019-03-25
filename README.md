@@ -9,7 +9,7 @@ Please review the [workshop prerequisites](https://github.com/cloudbees-days/jen
 * [Using the Theia IDE](./theia-ide.md)
 * [Leveraging Preview Environments for Pull Requests](./preview-environments.md)
 
-[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fcloudbees-days%2Fjenkins-x-workshop&page=editor&print=install-guide.txt&tutorial=install-cluster.md)
+[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fcloudbees-days%2Fjenkins-x-workshop&page=editor&print=install-guide.txt&tutorial=workshop.md)
 
 ## Workshop Prerequisites
 * Web browser
