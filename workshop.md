@@ -155,3 +155,20 @@ jx create devpod -l go --username='[your GitHub username]'
 
 This will then create a new DevPod based on the `go` based pod template and open your terminal inside that pod. You are now free to use the various pre-installed tools like git, docker, go, skaffold, jx which will all be using the same exact configuration as the automated Jenkins X CI/CD pipelines.
 
+## Using the Theia IDE
+DevPods have a `--sync` feature that will automatically sync local changes up to the DevPod. Any changes you make locally will be pushed up to the DevPod, built automatically, and then a temporary version of your application will be deployed to the Jenkins X cluster.
+
+Instead of using `--sync` we will be using another cool features of DevPods - [an embedded web based IDE called Theia](https://www.theia-ide.org/).
+
+Open the Theia IDE in your browser.
+
+Make a change to the code.
+
+Commit to a new branch.
+
+Go to GitHub and create a PR to the master branch.
+
+## Leveraging Preview Environments for Pull Requests
+
+Preview environments provide temporary environments to review your changes as part of the Pull Request process.
+
