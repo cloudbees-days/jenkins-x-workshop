@@ -94,12 +94,12 @@ Let's then be sure that all our files, local repos and projects are set from com
 
 - `-l go`  will filter the list of available quickstarts to a specific language - Go in this case -
 - `-f http` will filter for text that is part of the quickstart project names
-- `-p jx-go` will set *jx-go* as the application project name (application and git repo name)
+- `-p jx-go-http` will set *jx-go-http* as the application project name (application and git repo name)
 
  So, the following command will result in a list of Golang projects with 'http' in their names and will set the repo name in Git as *jx-go*:
 
 ```bash
-jx create quickstart -l go -f http -p jx-go
+jx create quickstart -l go -f http -p jx-go-http
 ```
 
 In this case there is only one match so it will automatically choose that one for you and move right to setting it up.
@@ -117,7 +117,7 @@ When prompted for:
 
 **? API Token:**- enter your GitHub personal access token. If you don't have one then click on this [link](https://github.com/settings/tokens/new?scopes=repo,read:user,read:org,user:email,write:repo_hook,delete_repo) - logging in to GitHub with the same GitHub account used in the previus steps and enter the API token.
 
-**? Enter the new repository name:** - this will be your project name and the name of the repository created for the project. We will all call 'go-http', so  enter **go-http**. 
+**? Enter the new repository name:** - this will be your project name and the name of the repository created for the project. We will all call 'jx-go-http', so  enter **jx-go-http**. 
 
 **? Would you like to initialise git now?** Choose the value "Y" to initialize git for your new project.
 
@@ -143,7 +143,7 @@ jx get activity -f jx-go-http -w
 ```
 Browse the pipeline log via: 
 ```bash 
-jx get build logs kmadel/jx-go-http/master
+jx get build logs <your github username>/jx-go-http/master
 ```
 Open the Jenkins console via: 
 ```bash

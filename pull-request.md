@@ -4,7 +4,7 @@ In this exercise we will change the message of our application created before an
 
 First, we ensure we are on our project local repo directory:
 ```bash
-cd ~/cloudbees_days/jx-workshop/jx-go
+cd ~/cloudbees_days/jx-workshop/jx-go-http
 ```
 Let's create a branch where to create our pull request:
 ```bash
