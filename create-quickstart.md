@@ -4,9 +4,27 @@ Quickstarts are very basic pre-made applications you can start a project from, i
 
 You can create new applications from a list of curated Quickstart applications via the [`jx create quickstart` command](https://jenkins-x.io/commands/jx_create_quickstart/).
 
- We will run the following quickstart command where the `-l go` will filter the list of available quickstarts to a specific language - Go in this case - and the `-f http` will filter for text that is part of the quickstart project names - so the following command will result in a list of Golang projects with 'http' in their names:
+Before creating our quickstart application let's create a directory to work within.
+
+```bash
+mkdir -p ~/cloudbees_days/jx-workshop
 ```
-jx create quickstart -l go -f http
+```bash
+cd ~/cloudbees_days/jx-workshop
+```
+
+Let's then be sure that all our files, local repos and projects are set from commands that are run from this directory.
+
+ We will run a quickstart command whith following parameters:
+
+- `-l go`  will filter the list of available quickstarts to a specific language - Go in this case -
+- `-f http` will filter for text that is part of the quickstart project names
+- `-p jx-go` will set *jx-go* as the application project name (application and git repo name)
+
+ So, the following command will result in a list of Golang projects with 'http' in their names and will set the repo name in Git as *jx-go*:
+
+```bash
+jx create quickstart -l go -f http -p jx-go-http
 ```
 
 In this case there is only one match so it will automatically choose that one for you and move right to setting it up.
@@ -22,9 +40,9 @@ When prompted for:
 
 **? GitHub user name:** choose the default value, which should be your own GitHub account username that you specified in the previous step.
 
-**?* API Token:**- enter your GitHub personal access token. If you don't have one then click on this [link](https://github.com/settings/tokens/new?scopes=repo,read:user,read:org,user:email,write:repo_hook,delete_repo) - logging in to GitHub with the same GitHub account used in the previus steps and enter the API token.
+**? API Token:**- enter your GitHub personal access token. If you don't have one then click on this [link](https://github.com/settings/tokens/new?scopes=repo,read:user,read:org,user:email,write:repo_hook,delete_repo) - logging in to GitHub with the same GitHub account used in the previus steps and enter the API token.
 
-**? Enter the new repository name:** - this will be your project name and the name of the repository created for the project. We will all call 'go-http' but prefix it with our GitHub account username, so I would enter **kmadel-go-http**. All of these repositories will be created in the same GitHub organization, so they must all have unique names.
+**? Enter the new repository name:** - this will be your project name and the name of the repository created for the project. We will all call 'jx-go-http', so  enter **jx-go-http**. 
 
 **? Would you like to initialise git now?** Choose the value "Y" to initialize git for your new project.
 
@@ -44,21 +62,32 @@ After you finish responding to the prompts a Jenkins X quickstart will automate 
  * add the git repository to your teams Jenkins
  * trigger the first pipeline
 
+ Watch pipeline activity via: 
+```bash
+jx get activity -f jx-go-http -w
 ```
-Watch pipeline activity via:    jx get activity -f jx-go-http -w
-Browse the pipeline log via:    jx get build logs kmadel/jx-go-http/master
-Open the Jenkins console via    jx console
-You can list the pipelines via: jx get pipelines
-When the pipeline is complete:  jx get applications
+Browse the pipeline log via: 
+```bash 
+jx get build logs <your github username>/jx-go-http/master
+```
+Open the Jenkins console via: 
+```bash
+jx console
+```
+You can list the pipelines via: 
+```bash
+jx get pipelines
+```
+When the pipeline is complete:
+```bash
+jx get applications
 ```
 
 And you can take a look at your project in CKCD.
 
 To see a list of all the quickstarts available in the current environment run the following command:
-```
+```bash
 jx create quickstart
 ```
 
 Cancel that command with `ctrl+c`.
-
-Now typically you would need to set up your computer with all the tools needed to makes changes to the code in the project and to be able to test those changes locally. In the [next exercise](./create-devpod.md) you will see how DevPods do all of that for you.
