@@ -79,6 +79,16 @@ Quickstarts are very basic pre-made applications you can start a project from, i
 
 You can create new applications from a list of curated Quickstart applications via the [`jx create quickstart` command](https://jenkins-x.io/commands/jx_create_quickstart/).
 
+Before creating our quickstart application let's create a directory to work within.
+
+```bash
+mkdir -p ~/cloudbees_days/jx-workshop
+```
+```bash
+cd ~/cloudbees_days/jx-workshop
+```
+
+Let's then be sure that all our files, local repos and projects are set from commands that are run from this directory.
 
  We will run a quickstart command whith following parameters:
 
