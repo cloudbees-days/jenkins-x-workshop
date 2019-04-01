@@ -19,12 +19,12 @@ Let's then be sure that all our files, local repos and projects are set from com
 
 - `-l go`  will filter the list of available quickstarts to a specific language - Go in this case -
 - `-f http` will filter for text that is part of the quickstart project names
-- `-p jx-go` will set *jx-go* as the application project name (application and git repo name)
+- (Optional) `-p jx-go` if using batch mode (-b) it will set *jx-go* as the application project name (application and git repo name)
 
  So, the following command will result in a list of Golang projects with 'http' in their names and will set the repo name in Git as *jx-go*:
 
 ```bash
-jx create quickstart -l go -f http -p jx-go-http
+jx create quickstart -l go -f http
 ```
 
 In this case there is only one match so it will automatically choose that one for you and move right to setting it up.
