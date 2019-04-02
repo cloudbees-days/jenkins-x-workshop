@@ -26,7 +26,7 @@ Although the examples and code in this repository were originally created by emp
 
 ## Contributors 
 
-* Contributor: [Kurt Madel](https://github.com/kmadel)
+* Contributors: [Kurt Madel](https://github.com/kmadel), [David Canadillas](https://github.com/dcanadillas)
  
 ## Questions, Feedback, Pull Requests Etc.
 
