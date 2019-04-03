@@ -2,21 +2,23 @@
 
 ## Let's get started!
 
-This guide will show you how to install `jx` and use it to create a cluster on Google Kubernetes Engine.
+This guide will show you how to install `jx`, use it to create a cluster on Google Kubernetes Engine and then explore the developer-centric features of Jenkins X.
 
-**Time to complete**: About 90 minutes
+Jenkins X version: 1.3.1073
+
+**Time to complete**: About 80 minutes
 
 Click the **Next** button to move to the next step.
 
 ## Installing Dependencies
 
-The first thing we need to do is install the `jx` binary and add it to your PATH.
+The first thing we need to do is install the `jx` binary and add it to your PATH. The following command will execute a script that does that for you.
 
 ```bash
 source ./install-jx.sh
 ```
 
-**Tip**: Click the copy button on the side of the code box and paste the command in the Cloud Shell terminal to run it.
+**Tip**: Click the copy button on the side of the code box to paste the command in the Cloud Shell terminal to run it.
 
 This may take a few minutes to complete as it downloads everything it requires.
 
@@ -25,7 +27,7 @@ This may take a few minutes to complete as it downloads everything it requires.
 To create the cluster, run the following:
 
 ```bash
-jx create cluster gke --skip-login
+jx create cluster gke --skip-login --default-admin-password=admin
 ```
 
 This will guide you through creating a cluster on GKE.
@@ -161,6 +163,7 @@ jx get applications
 And you can take a look at your project in CKCD.
 
 To see a list of all the quickstarts available in the current environment run the following command:
+
 ```bash
 jx create quickstart
 ```
@@ -180,7 +183,8 @@ Before creating a DevPod you want to be in the source code repository for which 
 To create your own DevPod use the command [`jx create devpod`](https://jenkins-x.io/commands/jx_create_devpod/). Run the `jx create devpod` command to get a list of all available DevPods. Once you have reviewed the list cancel with `ctrl+c`.
 
 For the workshop we want to create a simple **http Golang** project with the following command where the `-l go` specifies the programming language to supporet - but make sure you are in your quickstart repository directory that you created in the previous exercise:
-```
+
+```bash
 jx create devpod -l go --username='[your GitHub username]'
 ```
 
@@ -198,6 +202,19 @@ Make a change to the code.
 Commit to a new branch.
 
 Go to GitHub and create a PR to the master branch.
+
+## Install CloudBees Core for Kubernetes CD
+The CloudBees Core for Kubernetes CD addon provides a visual dashboard for your Jenkins X applications.
+
+```bash
+jx create addon cloudbees --basic
+```
+
+```bash
+jx cloudbees
+```
+
+Click on the provided url to open CloudBees Core for Kubernetes CD. Loing with the username `admin` and password `admin`.
 
 ## Leveraging Preview Environments for Pull Requests
 
