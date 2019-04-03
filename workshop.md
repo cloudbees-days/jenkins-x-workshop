@@ -75,13 +75,34 @@ but sometimes Jenkins is not able to start intime.  In this instance, you will b
 login to Jenkins using the admin user.  The password for the admin user will be displayed in the 
 console.  At this point, follow the instructions to add the Jenkins API token.
 
+### What did Jenkins X install?
+
+Now let's take a look at what got installed.
+
+```bash
+kubectl -n jx get pods
+```
+
+## Install CloudBees Core for Kubernetes CD
+The CloudBees Core for Kubernetes CD addon provides a visual dashboard for your Jenkins X applications.
+
+```bash
+jx create addon cloudbees --basic
+```
+
+```bash
+jx cloudbees
+```
+
+Click on the provided url to open CloudBees Core for Kubernetes CD. Loing with the username `admin` and password `admin`.
+
 ## Create a Quickstart Project
 
 Quickstarts are very basic pre-made applications you can start a project from, instead of creating a project from scratch.
 
 You can create new applications from a list of curated Quickstart applications via the [`jx create quickstart` command](https://jenkins-x.io/commands/jx_create_quickstart/).
 
-Before creating our quickstart application let's create a directory to work within.
+Before creating our quickstart application let's create a directory for our work.
 
 ```bash
 mkdir -p ~/cloudbees_days/jx-workshop
@@ -98,7 +119,7 @@ Let's then be sure that all our files, local repos and projects are set from com
 - `-f http` will filter for text that is part of the quickstart project names
 - `-p jx-go-http` will set *jx-go-http* as the application project name (application and git repo name)
 
- So, the following command will result in a list of Golang projects with 'http' in their names and will set the repo name in Git as *jx-go*:
+ So, the following command will result in a list of Golang projects with 'http' in their names and will set the repo name in Git as *jx-go-http*:
 
 ```bash
 jx create quickstart -l go -f http -p jx-go-http
@@ -160,7 +181,7 @@ When the pipeline is complete:
 jx get applications
 ```
 
-And you can take a look at your project in CKCD.
+And you can take a look at your pipeline in CKCD.
 
 To see a list of all the quickstarts available in the current environment run the following command:
 
@@ -203,20 +224,59 @@ Commit to a new branch.
 
 Go to GitHub and create a PR to the master branch.
 
-## Install CloudBees Core for Kubernetes CD
-The CloudBees Core for Kubernetes CD addon provides a visual dashboard for your Jenkins X applications.
-
-```bash
-jx create addon cloudbees --basic
-```
-
-```bash
-jx cloudbees
-```
-
-Click on the provided url to open CloudBees Core for Kubernetes CD. Loing with the username `admin` and password `admin`.
-
 ## Leveraging Preview Environments for Pull Requests
 
 Preview environments provide temporary environments to review your changes as part of the Pull Request process.
+
+Create a new branch for the pull request and check it out:
+```bash
+git checkout -b my-pr
+```
+
+Update the `main.go` file:
+```bash
+cat main.go | sed -e "s@hello, devpod with tests@hello, PR@g" \
+    | tee main.go
+```
+
+Commit the changes and push to GitHub:
+```bash
+git commit -m "This is a PR"
+git push --set-upstream origin my-pr
+```
+
+Use the **jx** CLI to create a GitHub PR:
+```bash
+jx create pr -t "My PR" \
+  --body "This is the text that describes the PR
+and it can span multiple lines" -b
+```
+
+Open the link that is the output of that command.
+
+Get the preview environments and check the output of your updated application:
+```bash
+jx get previews
+curl "$PR_ADDR/demo/hello"
+```
+
+Merge the PR:
+
+* Open the pull request screen in GitHub
+* Click Merge pull request button
+* Click the Confirm merge button.
+
+View automatice deployment to staging environment:
+
+```bash
+jx get activity -f go-demo-6 -w
+
+jx get applications
+
+STAGING_ADDR=[...] # Replace `[...]` with the URL
+
+curl "$STAGING_ADDR/demo/hello"
+```
+
+
 
