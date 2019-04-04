@@ -2,9 +2,13 @@
 
 ## Let's get started!
 
-This guide will show you how to install `jx`, use it to create a cluster on Google Kubernetes Engine and then explore the developer-centric features of Jenkins X.
+This guide will show you how to install `jx`, use it to create a cluster on Google Kubernetes Engine and then explore the developer-centric features of Jenkins X to include:
 
-Jenkins X version: 1.3.1073
+* Instaling CloudBees Core for Kubernetes CD (CKCD)
+* Creating a Quickstart Project
+* Creating and using a DevPod
+* Using the Theia IDE web based IDE
+* Leveraging Preview Environments for Pull Requests
 
 **Time to complete**: About 80 minutes
 
@@ -83,7 +87,7 @@ Now let's take a look at what got installed.
 kubectl -n jx get pods
 ```
 
-## Install CloudBees Core for Kubernetes CD
+## Install CloudBees Core for Kubernetes CD (CKCD)
 The CloudBees Core for Kubernetes CD addon provides a visual dashboard for your Jenkins X applications.
 
 ```bash
