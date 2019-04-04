@@ -107,8 +107,8 @@ jx create addon cloudbees --basic
 ```
 When prompted for:
 
-* CloudBees Preview username - enter `demo`
-* CloudBees Preview password - enter `cdxpreview`
+* CloudBees Preview username - enter username provided by instructor
+* CloudBees Preview password - enter password provided by instructor
 
 After the addon installed successfully, run the following command to get the URL for CKCD:
 ```bash
@@ -297,7 +297,9 @@ You will also see it updated in CKCD.
 
 ## Use CKCD to Promote to Production
 
-Open CKCD in your browser and go to the *Environments* screen.
+Open CKCD in your browser and go to the *Environments* screen. 
+Your instructor will walk you through using CKCD to promote applications between *Staging* 
+and *Production* environments.
 
 
 
