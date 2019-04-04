@@ -12,7 +12,7 @@ This guide will show you how to install `jx`, use it to create a cluster on Goog
 
 >NOTE: It is recommended that your [create a GitHub Organization](https://help.github.com/en/articles/creating-a-new-organization-from-scratch) specifically for this workshop.
 
-**Time to complete**: About 80 minutes
+**Time to complete**: About 75 minutes
 
 Click the **Next** button to move to the next step.
 
