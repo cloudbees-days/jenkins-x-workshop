@@ -72,10 +72,9 @@ If this is the first time you have run `jx` in this cloudshell, `jx` will prompt
 github username & api token.  If you already have one, simply enter the values when prompted. 
 If you don't have an api token, click on the link provided to generated one and enter the 
 token value into the prompt. You may be prompted for your GitHub api token twice, make sure 
-you enter the same toke.
+you enter the same token.
 
 * Do you wish to use GitHub as the pipelines Git server: `Yes`
-* 
 
 ### Jenkins Installation
 
@@ -83,11 +82,12 @@ you enter the same toke.
 * Pick workload build pack - select `Kubernetes Workloads: Automated CI+CD with GitOps Promotion`
 
 Next, `jx` will attempt to configure Jenkins connectivity.  This should be done automatically, 
-but sometimes Jenkins is not able to start intime.  In this instance, you will be asked to 
+but sometimes Jenkins is not able to start in time.  In this instance, you will be asked to 
 login to Jenkins using the admin user.  The password for the admin user will be displayed in the 
-console.  At this point, follow the instructions to add the Jenkins API token.
+console - for this workshop it should be `admin`.  At this point, follow the instructions to add 
+the Jenkins API token.
 
-* Select the organization where you want to create the environment repository: enter `the GitHub org name you created for this workshop`
+* Select the organization where you want to create the environment repository: enter `the GitHub org name you created for  workshop`
 
 ### What did Jenkins X install?
 
