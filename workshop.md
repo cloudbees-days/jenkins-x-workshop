@@ -295,12 +295,9 @@ jx get activity -f jx-go-http -w
 
 You will also see it updated in CKCD.
 
-jx get applications
+## Use CKCD to Promote to Production
 
-STAGING_ADDR=[...] # Replace `[...]` with the URL
-
-curl "$STAGING_ADDR/demo/hello"
-```
+Open CKCD in your browser and go to the *Environments* screen.
 
 
 
