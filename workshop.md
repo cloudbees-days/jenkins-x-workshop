@@ -33,7 +33,7 @@ This may take a few minutes to complete as it downloads everything it requires.
 To create the cluster, run the following:
 
 ```bash
-jx create cluster gke --skip-login --default-admin-password=admin
+jx create cluster gke --no-tiller --skip-login --default-admin-password=admin
 ```
 
 This will guide you through creating a cluster on GKE.
