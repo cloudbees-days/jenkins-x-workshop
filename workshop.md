@@ -48,6 +48,7 @@ you allow `jx` to install any missing dependencies.
 
 JX will then prompt you for the basic configuration options for your cluster, such as:
 
+* What type of cluster would you like to create `Zonal`
 * Google Compute Zone - select a zone that is near to you
 * Google Cloud Machine Type - recommended `n1-standard-2`
 * Minimum number of Nodes - recommended `3`
@@ -78,7 +79,7 @@ you enter the same token.
 
 ### Jenkins Installation
 
-* Select Jenkins Installation Type - select `Static Jenkins Master`
+* Select Jenkins Installation Type - select `Static Jenkins Server and Jenkinsfiles`
 * Pick workload build pack - select `Kubernetes Workloads: Automated CI+CD with GitOps Promotion`
 
 Next, `jx` will attempt to configure Jenkins connectivity.  This should be done automatically, 
