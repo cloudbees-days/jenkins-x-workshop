@@ -122,6 +122,12 @@ If the service isn't available yet run the following command to get the status o
 kubectl get pods 
 ```
 
+>NOTE: There may be a small issue where you have to update the container images for the CloudBees addon by patching the pod - replacing {core-pod-id} with the id of your core pod:
+
+```bash
+kubectl patch pod/{core-pod-id}  -p '{"spec":{"containers":[{"name":"core-frontend","image":"docker.io/jenkinsxio/core-frontend:0.0.612"},{"name":"core-backend","image":"docker.io/jenkinsxio/core-backend:0.0.210"}]}}'
+```
+
 ## Create a Quickstart Project
 
 Quickstarts are very basic pre-made applications you can start a project from, instead of creating a project from scratch.
