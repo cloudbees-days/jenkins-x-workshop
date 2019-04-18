@@ -50,7 +50,7 @@ JX will then prompt you for the basic configuration options for your cluster, su
 
 * What type of cluster would you like to create `Zonal`
 * Google Compute Zone - select a zone that is near to you
-* Google Cloud Machine Type - recommended `n1-standard-2`
+* Google Cloud Machine Type - recommended `n1-standard-4`
 * Minimum number of Nodes - recommended `3`
 * Maximum number of Nodes - recommended `5`
 * Would you like use preemptible VMs - recommended `No`
@@ -77,16 +77,12 @@ you enter the same token.
 
 * Do you wish to use GitHub as the pipelines Git server: `Yes`
 
-### Jenkins Installation
+### Serverless Jenkins X Pipeline with Tekton Installation
 
-* Select Jenkins Installation Type - select `Static Jenkins Server and Jenkinsfiles`
+* Select Jenkins Installation Type - select `Serverless Jenkins X Pipelines with Tekton`
 * Pick workload build pack - select `Kubernetes Workloads: Automated CI+CD with GitOps Promotion`
 
-Next, `jx` will attempt to configure Jenkins connectivity.  This should be done automatically, 
-but sometimes Jenkins is not able to start in time.  In this instance, you will be asked to 
-login to Jenkins using the admin user.  The password for the admin user will be displayed in the 
-console - for this workshop it should be `admin`.  At this point, follow the instructions to add 
-the Jenkins API token.
+Next, `jx` will install Prow and Tekton (among other components).
 
 * Select the organization where you want to create the environment repository: enter `the GitHub org name you created for  workshop`
 
