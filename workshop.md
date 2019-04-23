@@ -291,7 +291,7 @@ Merge the PR:
 
 * Open the pull request screen in GitHub
 * Add a `/approve` comment to your PR.
-* Prow's Tide component will auot-merge the PR for you.
+* Prow's Tide component will auot-merge the PR for you and deploy your application to your Staging environment.
 
 View automatice deployment to staging environment:
 
