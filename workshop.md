@@ -183,12 +183,10 @@ jx get activity -f jx-go-http -w
 ```
 Browse the pipeline log via: 
 ```bash 
-jx get build logs <your github org name>/jx-go-http/master
+jx get build logs
 ```
-Open the Jenkins console via: 
-```bash
-jx console
-```
+Select your pipeline from the list.
+
 You can list the pipelines via: 
 ```bash
 jx get pipelines
@@ -216,7 +214,7 @@ To create your own DevPod we will use the command [`jx create devpod`](https://j
 For the workshop we are using the **http Golang** quickstart project. We will create a DevPod with the `-l go` argumeent, specifying the programming language to support - make sure you are in your quickstart repository directory that you created in the previous exercise:
 
 ```bash
-jx create devpod -l go --username='[your GitHub username]'
+jx create devpod -l go
 ```
 
 This will then create a new DevPod based on the `go` based pod template and open your terminal inside that pod. You are now free to use the various pre-installed tools like git, docker, go, skaffold, jx which will all be using the same exact configuration as the automated Jenkins X CI/CD pipelines.
@@ -287,8 +285,8 @@ Check the output of your updated application:
 Merge the PR:
 
 * Open the pull request screen in GitHub
-* Click Merge pull request button
-* Click the Confirm merge button.
+* Add a `/approve` comment to your PR.
+* Prow's Tide component will auot-merge the PR for you.
 
 View automatice deployment to staging environment:
 
