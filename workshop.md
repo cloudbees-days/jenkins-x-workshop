@@ -55,7 +55,7 @@ JX will then prompt you for the basic configuration options for your cluster, su
 * Maximum number of Nodes - recommended `5`
 * Would you like use preemptible VMs - recommended `No`
 * Would you like to access Google Cloud Storage / Google Container Registry - recommended `No`
-* Would you like to enable Kaniko for building container images - recommended `No`
+* Would you like to enable Kaniko for building container images - recommended `Yes`
 * (Optional) Would you like to enable Cloud Build, Container Registry & Container Analysis APIs - recommended `No`
 
 ### Creating the cluster
@@ -272,6 +272,11 @@ and it can span multiple lines" -b
 ```
 
 Open the link that is the output of that command.
+
+Check the progress of the PR build via:
+```bash
+jx get activity
+```
 
 Get the preview environments:
 ```bash
