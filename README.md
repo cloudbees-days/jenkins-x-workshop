@@ -2,14 +2,15 @@
 In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes with Jenkins Pipelines and pre-production environments created automatically.
 
 ## Workshop Content
-Please review the [workshop prerequisites](https://github.com/cloudbees-days/jenkins-x-workshop#workshop-prerequisites) before proceeding to any exercises.
-* [Getting Started](./getting-started.md)
-* [Create a Quickstart Project](./create-quickstart.md)
-* [Create and Use a DevPod](./create-devpod.md)
-* [Using the Theia IDE](./theia-ide.md)
-* [Leveraging Preview Environments for Pull Requests](./preview-environments.md)
+Please review the [workshop prerequisites](https://github.com/cloudbees-days/jenkins-x-workshop#workshop-prerequisites) before proceeding to the workshop.
 
-[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fcloudbees-days%2Fjenkins-x-workshop&page=editor&print=install-guide.txt&tutorial=workshop.md)
+* Instaling CloudBees Core for Kubernetes CD (CKCD)
+* Creating a Quickstart Project
+* Creating and using a DevPod
+* Using the Theia IDE web based IDE
+* Leveraging Preview Environments for Pull Requests
+
+[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fcloudbees-days%2Fjenkins-x-workshop&print=install-guide.txt&tutorial=workshop.md)
 
 ## Workshop Prerequisites
 * Web browser
@@ -26,7 +27,7 @@ Although the examples and code in this repository were originally created by emp
 
 ## Contributors 
 
-* Contributor: [Kurt Madel](https://github.com/kmadel)
+* Contributors: [Kurt Madel](https://github.com/kmadel), [David Canadillas](https://github.com/dcanadillas)
  
 ## Questions, Feedback, Pull Requests Etc.
 
