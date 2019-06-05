@@ -50,7 +50,7 @@ JX will then prompt you for the basic configuration options for your cluster, su
 
 * What type of cluster would you like to create `Zonal`
 * Google Compute Zone - select a zone that is near to you
-* Google Cloud Machine Type - recommended `n1-standard-4`
+* Google Cloud Machine Type - recommended `n1-standard-8`
 * Minimum number of Nodes - recommended `3`
 * Maximum number of Nodes - recommended `5`
 * Would you like use preemptible VMs - recommended `No`
