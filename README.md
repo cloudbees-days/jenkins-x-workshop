@@ -1,35 +1,36 @@
-# Jenkins X and CloudBees Core for Kubernetes CD Developers Workshop
-In this workshop you will discover how Jenkins X and CloudBees Core for Kubernetes (K8s) CD can help you deliver streamlined workflows for cloud native applications on Kubernetes with Jenkins Pipelines and pre-production environments created automatically.
+# Jenkins X Lab Quickstart
 
-## Workshop Content
-Please review the [workshop prerequisites](https://github.com/cloudbees-days/jenkins-x-workshop#workshop-prerequisites) before proceeding to the workshop.
+This repository hosts a lab documentation for a Jenkins X Quickstart tutorial. It is divided in the following topics:
 
-* Instaling CloudBees Core for Kubernetes CD (CKCD)
-* Creating a Quickstart Project
-* Creating and using a DevPod
-* Using the Theia IDE web based IDE
-* Leveraging Preview Environments for Pull Requests
+* Creating a CI/CD Cloud Native (K8s) cluster with Jenkins X installed - [Go to section](labs/JXCreateCluster.md)
+* Creating a first quickstart application using Jenkins X capabilities - [Go to section](labs/JXQuickstart.md)
+* Doing a Pull Request in GitHub and showing Preview Environments with Jenkins X - [Go to section](labs/JXPullRequest.md)
+* Promoting your quickstart application into Production with automated Jenkins X capabilities - [Go to section](labs/JXPromotion.md)
 
-[![Open in Cloud Shell](http://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https%3A%2F%2Fgithub.com%2Fcloudbees-days%2Fjenkins-x-workshop&print=install-guide.txt&tutorial=workshop.md)
+## What you need to know
 
-## Workshop Prerequisites
-* Web browser
-* A basic understanding of Jenkins Pipelines: https://jenkins.io/doc/book/pipeline/getting-started/ 
-* A basic understanding of Kubernetes: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/ 
-* Internet access to include access to https://github.com to include the ability to access and use [the GitHub File Editor](https://help.github.com/articles/editing-files-in-your-repository/)
-* An account on Github.com and a basic understanding of how to use Github to do things like fork a repository, edit files in the web UI, and create pull requests
-* Google cloud account (there's a $300 credit, free tier if you don't already have one https://cloud.google.com/free/)
-* A Google cloud project (select your project with `gcloud config set project PROJECT_ID` once Cloud Shell is ready)
+This lab is focused on intermediate level knowledge of CI/CD and Kubernetes Cloud Native development. So, it's going to be easier for you if you know about the following:
 
-## Disclaimer
+* Kubernetes basic concepts
+* CI/CD pipelines knowledge
+* Jenkins or CloudBees CI/CD tools understanding
+* Google Cloud Platform basic usage
+* Software development and Git branching notions
+* Linux/Unix command line based experience
 
-Although the examples and code in this repository were originally created by employees of CloudBees, Inc. to use in training customers, your use of this material is not sponsored or supported by CloudBees, Inc.
+Anyway, don't worry if you don't know about these because you stil can do the lab. But it will take more time to finish if you want to understand every concept.
 
-## Contributors 
+## Before starting the lab
 
-* Contributors: [Kurt Madel](https://github.com/kmadel), [David Canadillas](https://github.com/dcanadillas)
- 
-## Questions, Feedback, Pull Requests Etc.
+The detailed list of requirements to start the lab is in [Setup section](./labs/LabSetup.md), but as summary you will need:
 
-If you have any questions, feedback, suggestions, etc. please submit them via issues or, even better, submit a Pull Request!
+* A laptop connected to internet with a decent connection. Please, try avoid any proxy configuration. If not, you will need to be able to connect to:
+  * https://console.cloud.google.com
+  * https://github.com
+* A GitHub account
+* Creating or having a Google Cloud Platform account (charges may apply)
+* Time for this lab (around 1,5 hours)
 
+You can start the lab [HERE](./labs/JXIntro.md) or follow the lab in Google Cloud Shell Tutorials:
+
+[![Setup your environment](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-lab&tutorial=labs/JenkinsXTutorial.md)
