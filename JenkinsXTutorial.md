@@ -80,7 +80,7 @@ You can also follow by reading this Markdown document locally or [in GitHub](htt
 
 ## Install the Jenkins X CLI binary
 
-There is a script included in this repo to install Jenkins X CLI depending on your platform (Linux or MacOS) and the Jenkins X distribution (CloudBees or OSS). For this lab we are using Jenkins OSS, so just execute the following to install CLI version 2.0.420 (Please, see the note below if you want to work with the latest version):
+There is a script included in this repo to install Jenkins X CLI depending on your platform (Linux or MacOS) and the Jenkins X distribution (CloudBees or OSS). For this lab we are using Jenkins OSS, so just execute the following to install CLI version 2.0.420 (Please, **see the note below if you want to work with the latest version**):
 
 ```bash
 ./install-jx.sh -v 2.0.420
@@ -114,7 +114,7 @@ Operating System   Debian GNU/Linux 9.9 (stretch)
 Activating the Jenkins X Profile
 ```
 
-> Note:
+> **Note:**
 > You can work with the latest version of Jenkins X OSS or CloudBees Jenkins X Distribution, but in this case you will need to upgrade the Git version installed in the Google Cloud Shell. The git version required is 2.15+. You can upgrade the Git client in the shell by doing the following:
 > ```
 > $ sudo apt update
@@ -127,10 +127,13 @@ Activating the Jenkins X Profile
 > $ sudo make prefix=/usr/local install
 > $ git version
 > ```
+> 
 > If you want to work with the CloudBees Jenkins X Distribution, you can do it by:
+> 
 > ```bash
 > ./install-jx -c
 > ```
+> 
 > And if you want to work with the latest OSS version:
 > ```bash
 > ./install-jx
