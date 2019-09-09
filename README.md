@@ -33,4 +33,4 @@ The detailed list of requirements to start the lab is in [Setup section](./labs/
 
 You can start the lab [HERE](./labs/JXIntro.md) or follow the lab in Google Cloud Shell Tutorials:
 
-[![Setup your environment](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-lab&tutorial=labs/JenkinsXTutorial.md)
+[![Setup your environment](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-workshop&tutorial=labs/JenkinsXTutorial.md)
