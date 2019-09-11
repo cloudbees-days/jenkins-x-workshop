@@ -6,7 +6,7 @@ This lab will create a Kubernetes cluster using Google Container Engine (GKE) an
 
 To complete this lab, you’ll need:
 
-* A GitHub account to use for the Jenkins X configuration flow. This is mandatory, if you don't have one or you do not want to mess up your existing one, go now and [create one](https://github.com/join)
+* A GitHub account to use for the Jenkins X configuration flow. This is mandatory, if you don't have one or you do not want to add repositories to your existing one, go now and [create one](https://github.com/join)
 * Access to a standard internet browser (Chrome browser recommended).
 * Time. It shouldn't take you more than 1,5 hours to read and finish everything (including setup), but depends on interruptions and how you plan your time. Then, plan your schedule so you have time to complete the lab. Follow the Google Cloud Shell tutorial in the right side of your screen 
 * You need a Google Cloud Platform account or project. You can use a [Free Tier Google account to create one](https://cloud.google.com/free/) or your own. 
