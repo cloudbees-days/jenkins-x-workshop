@@ -366,7 +366,7 @@ The following set of commands will be run from this directory.
 Create now a Golang Quickstart with the following command:
 
 ```bash
-jx create quickstart -l go -f http -p jx-go-http -b
+jx create quickstart -l go -f golang-http -p jx-go-http -b
 ```
 
 Output (do not copy)
