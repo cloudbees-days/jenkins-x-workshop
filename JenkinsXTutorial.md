@@ -179,7 +179,7 @@ Let's create a GKE cluster to host Jenkins X. To create the cluster, run the jx 
 jx create cluster gke --no-tiller --default-admin-password=admin \
 --project-id=${PROJECT_ID} --cluster-name=jenkins-x-lab --zone=europe-west1-d \
 --min-num-nodes 4 --max-num-nodes 6 --advanced-mode \
---version=2.0.1128
+--version=2.0.1128 --skip-login
 ```
 
 This command is interactive; it will guide you through creating a cluster on GKE by prompting you to answer some questions. Read on to know how to continue.
