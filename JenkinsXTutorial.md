@@ -80,7 +80,7 @@ You can also follow by reading this Markdown document locally or [in GitHub](htt
 
 ## Install the Jenkins X CLI binary
 
-There is a script included in this repo to install Jenkins X CLI depending on your platform (Linux or MacOS) and the Jenkins X distribution (CloudBees or OSS). For this lab we are using Jenkins OSS, so just execute the following to install CLI version 2.0.420 (Please, **see the note below if you want to work with the latest version**):
+There is a script included in this repo to install Jenkins X CLI depending on your platform (Linux or MacOS) and the Jenkins X distribution (CloudBees or OSS). For this lab we are using Jenkins OSS, so just execute the following to install CLI version 2.0.643 (Please, **see the note below if you want to work with the latest version**):
 
 ```bash
 ./install-jx.sh -v 2.0.420
@@ -145,6 +145,10 @@ You can find also the [manual steps to install Jenkins X CLI](https://jenkins-x.
 
 We are going to create a Kubernetes cluster with a Jenkins X platform deployed using the Jenkins X CLI. You will see that having a ready CI/CD Cloud Native platform from scratch is just a matter of minutes by executing some easy commands from the CLI.
 
+> **Note**: If you want to try to use [Jenkins X Boot]() to create the cluster, you can open a new lab in the bellow button, or just [take a look here](./JXBoot/JenkinsXboot.md) and come back to this tutorial.
+
+> [![Setup your environment](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-lab&tutorial=JXBoot/JenkinsXBoot.md)
+
 ### Prepare the environment
 Make sure the Google Cloud project you're working on is the one selected in the Cloud Web Console. This should be the case if you opened Cloud Shell with the right project selected:
 
@@ -178,8 +182,8 @@ Let's create a GKE cluster to host Jenkins X. To create the cluster, run the jx 
 ```bash
 jx create cluster gke --no-tiller --default-admin-password=admin \
 --project-id=${PROJECT_ID} --cluster-name=jenkins-x-lab --zone=europe-west1-d \
---min-num-nodes 4 --max-num-nodes 6 --advanced-mode \
---version=2.0.1128 --skip-login
+-m n1-standard-2 --min-num-nodes 4 --max-num-nodes 6 --advanced-mode \
+--skip-login
 ```
 
 This command is interactive; it will guide you through creating a cluster on GKE by prompting you to answer some questions. Read on to know how to continue.
@@ -191,13 +195,14 @@ The jx command will attempt to locate any required dependencies first (particula
 #### Configure you cluster
 
 Follow the prompt to provide the following answers:
-* Google Cloud Machine Type: n1-standard-2
+
+<!-- * Google Cloud Machine Type: n1-standard-2
 * Minimum number of Nodes: 4
-* Maximum number of Nodes: 6
-* Would you like use preemptible VMs: N
-* Would you like to access Google Cloud Storage / Google Container Registry: Y
-* Would you like to enable Cloud Build, Container Registry & Container Analysis APIs:  Y
-* Would you like to enable Kaniko for building container images: Y
+* Maximum number of Nodes: 6 -->
+* Would you like use preemptible VMs: **N**
+* Would you like to access Google Cloud Storage / Google Container Registry: **Y**
+* Would you like to enable Cloud Build, Container Registry & Container Analysis APIs:  **Y**
+* Would you like to enable Kaniko for building container images: **Y**
 
 Now jx is using the Google Cloud SDK to create a GKE cluster with the provided parameters. It will take some time before continuing with the configuration (up to five minutes), and will output something like this:
 

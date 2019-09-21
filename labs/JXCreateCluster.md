@@ -2,6 +2,8 @@
 
 We are going to create a Kubernetes cluster with a Jenkins X platform deployed using the Jenkins X CLI. You will see that having a ready CI/CD Cloud Native platform from scratch is just a matter of minutes by executing some easy commands from the CLI.
 
+> **Note**: In case you want to use the [Jenkins X Boot feature](https://jenkins-x.io/docs/reference/boot/) to create the cluster using GitOps, [use this lab](../JXBoot/JenkinsXBoot.md). If not, you can continue reading and create the cluster and deploy Jenkins X using the `jx create cluster` command from the CLI.
+
 ## Prepare the environment
 Make sure the Google Cloud project you're working on is the one selected in the Cloud Web Console. This should be the case if you opened Cloud Shell with the right project selected:
 

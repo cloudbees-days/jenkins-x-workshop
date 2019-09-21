@@ -52,3 +52,5 @@ You can find also the [manual steps to install Jenkins X CLI](https://jenkins-x.
 Now you can go to the [next section](./JXCreateCluster.md):
 
 <!-- [![Setup your environment](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-lab&tutorial=labs/JXInstall.md) -->
+
+> **Note**: In case you want to use the [Jenkins X Boot feature](https://jenkins-x.io/docs/reference/boot/) to create the cluster, [use this section](../JXBoot/JenkinsXBoot.md).
