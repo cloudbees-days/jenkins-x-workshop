@@ -1,6 +1,6 @@
 # Jenkins X introduction
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-lab&tutorial=JenkinsXTutorial.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dcanadillas/jenkins-x-workshop&tutorial=JenkinsXTutorial.md)
 
 [Jenkins X](https://jenkins-x.io/) is the Cloud Native implementation of Jenkins. By leveraging Kubernetes and using CRDs (Custom Resource Definitions) it allows you to execute your CI/CD pipelines with no expert Kubernetes knowledge required. It uses containers orchestration and development buildpacks to automate the development experience to deliver your applications.
 
