@@ -24,6 +24,8 @@ The first thing we need to do is install the `jx` binary and add it to your PATH
 source ./install-jx.sh
 ```
 
+<walkthrough-editor-open-file filePath="create-devpod.md"></walkthrough-editor-open-file>
+
 **Tip**: Click the copy button on the side of the code box to paste the command in the Cloud Shell terminal to run it.
 
 This may take a few minutes to complete as it downloads everything it requires.
